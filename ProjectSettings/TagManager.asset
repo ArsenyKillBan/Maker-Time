@@ -8,6 +8,7 @@ TagManager:
   - weapon
   - weapons
   - enemy
+  - Points
   layers:
   - Default
   - TransparentFX

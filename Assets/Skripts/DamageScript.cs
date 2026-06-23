@@ -2,15 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class DamageScript : MonoBehaviour
 {
     public int damageAmount = 20;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "enemy")
+        if (other.CompareTag("enemy"))
         {
-            other.GetComponent<EnemyScript>().TakeDamage(damageAmount);
+            EnemyScript enemy =
+                other.GetComponent<EnemyScript>();
+
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damageAmount);
+            }
         }
     }
 }
