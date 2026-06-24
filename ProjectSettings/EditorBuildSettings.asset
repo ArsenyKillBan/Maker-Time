@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Looby.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: e9c7fa89c04964a439b052f568639430
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 39d58b42b17d83d45810f0737aee18d0
   m_configObjects: {}

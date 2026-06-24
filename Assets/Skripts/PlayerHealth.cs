@@ -65,4 +65,14 @@ public class PlayerHealth : MonoBehaviour
 
         playerMover.enabled = true;
     }
+    public void Heal(int amount)
+    {
+        currentHP += amount;
+
+        if (currentHP > maxHP)
+            currentHP = maxHP;
+
+        if (healthBar != null)
+            healthBar.value = currentHP;
+    }
 }
